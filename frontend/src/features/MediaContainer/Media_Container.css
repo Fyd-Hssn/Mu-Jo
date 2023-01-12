@@ -1,0 +1,84 @@
+#container {
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 85%;
+    width: 35%;
+    float: left;
+    background-color: rgb(173, 155, 155);
+    margin-left: 2.5%;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+
+#track_image {
+    display: table;
+    /* position: absolute; */
+    margin: 0 auto;
+    border-radius: 5%;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;  */
+    /* top: 15%;
+    right: 10%; */
+}
+
+#login {
+  display: inline-flex;
+  float: left;
+  margin-top: 13%;
+  margin-left: 6%;
+  height: 5vh;
+  width: 15vh;
+  font-size:1.4vh;
+  align-content: center;
+  align-items: center;
+  padding-left: .75vw;
+  background-color: rgb(22, 22, 22);
+  color: rgba(255, 255, 255, 0.596);
+  border-style: double;
+}
+
+#track_button {
+  display: block;
+  position: absolute;
+  top: 87.5%;
+  right: 33%;
+  align-self: center;
+  text-align: center;
+  height: 5vh;
+  width: 15vh;
+  font-size:1.4vh;
+  background-color: rgb(22, 22, 22);
+  color: rgba(255, 255, 255, 0.596);
+  border-style: double;
+}
+
+#track_name {
+  display:flex;
+  position:absolute;
+  top: -1%;  
+  font-size: 2vmin;
+  height: 5vh;
+  /* transform: scale(1, 1); */
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* transform:translateX(100%); */
+  /* animation: scroll-left 2s linear infinite; */
+}
+#artist_name {
+  display:flex;
+  position:absolute;
+  top: 5%;  
+  font-size: 1.6vmin;
+  height: 5vh;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  color:rgb(84, 84, 84)
+}

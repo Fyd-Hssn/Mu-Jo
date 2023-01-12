@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import playlistButtonReducer from '../features/PlaylistButton/PlaylistButtonSlice';
+import mediaContainerReducer from '../features/MediaContainer/MediaContainerSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    playlistButton: playlistButtonReducer,
+    mediaContainer: mediaContainerReducer,
   },
 });

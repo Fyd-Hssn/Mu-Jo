@@ -41,41 +41,6 @@ h1 {
   border-style: double;
 }
 
-#playlist_cycle {
-  display: inline-flex;
-  position: relative;
-  width: 10vw;
-  height: 3vh;
-  min-width: 10px;
-  top: 15%;
-}
-
-#playlist_button {
-  display: inline-flex;
-  font-size: 1vmax;
-  align-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 800px) {
-  #playlist_button {
-    display: none;
-  }
-}
-
-#playlist {
-  position: relative;
-  top: 15%;
-  height: 10%;
-}
-
-#currentPlaylist {
-  font-size: 1.2rem;
-  color: white;
-  font-family: 'Trebuchet MS';
-  font-weight: lighter;
-}
-
 #notes {
   display: inline-flex;
   position: relative;
