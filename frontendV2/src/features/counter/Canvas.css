@@ -1,0 +1,54 @@
+#canvas {
+    margin: auto;
+    margin-top: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 50px 5px;
+    border-radius: 15px;
+    height: 60vh;
+    width: 60vw;
+    background-color: rgb(22, 22, 22);
+  }
+
+#notes {
+    display: inline-flex;
+    position: relative;
+    float: right;
+    width: 60%;
+    height: 40%;
+    top: 15%;
+    transform: translateY(-15%);
+}
+
+#playlist_cycle {
+    display: inline-flex;
+    position: relative;
+    width: 10vw;
+    height: 3vh;
+    min-width: 10px;
+    top: 15%;
+}
+
+#playlist {
+    position: relative;
+    top: 15%;
+    height: 10%;
+}
+
+#currentPlaylist {
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-weight: lighter;
+}
+
+#playlist_button {
+    display: inline-flex;
+    font-size: 1vmax;
+    align-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    #playlist_button {
+        display: none;
+    }
+}

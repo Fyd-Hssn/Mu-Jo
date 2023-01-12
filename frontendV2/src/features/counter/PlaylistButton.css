@@ -1,0 +1,40 @@
+#playlistLabel {
+    position: relative;
+    top: 15%;
+    height: 10%;
+  }
+
+#currentPlaylist {
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-weight: lighter;
+}
+
+#playlist_button {
+    display: inline-flex;
+    font-size: 1vmax;
+    align-content: center;
+    align-items: center;
+    justify-content: right;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.596);
+    background-color: rgba(42, 41, 41, 0.819);
+    font-size: 1.5vh;
+    border-style: double;
+  }
+
+#playlist_cycle {
+  display: inline-flex;
+  position: relative;
+  width: 10vw;
+  height: 3vh;
+  min-width: 10px;
+  top: 12%;
+} 
+
+@media screen and (max-width: 800px) {
+  #playlist_button {
+    display: none;
+  }
+}

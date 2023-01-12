@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import axios from 'axios';
-import Media_Container from './features/MediaContainer/Media_Container.js';
+import Media_Container from './Media_Container.js';
 import Notes from './Notes.js';
-import {PlaylistButton} from './features/PlaylistButton/PlaylistButton.js';
+// import {PlaylistButton} from './features/counter/PlaylistButton.js';
 // import PlaylistButton from './PlaylistButton.js';
 import {getCookie, getPlaylists, spotifyApi} from './user_data_methods';
 
@@ -55,7 +55,7 @@ function App() {
             <Notes />
           </div>
           <div id='playlist_cycle'>
-            <PlaylistButton />
+            {/* <PlaylistButton /> */}
           </div>
         </div>
       </header>

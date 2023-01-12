@@ -1,0 +1,12 @@
+#container {
+    display: inline-flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 85%;
+    width: 35%;
+    float: left;
+    background-color: rgb(173, 155, 155);
+    margin-left: 2.5%;
+    border-radius: 50px;
+  }
