@@ -55,7 +55,9 @@ Mu-Jo is a MERN-stack application utilizing the following core technologies:
 
 ![delete](https://github.com/Fyd-Hssn/Mu-Jo/blob/master/screenshots/delete.PNG?raw=true)
  
+##
 
+Copyright (c) 2023 Faiyaad Hossain
 
 
 
