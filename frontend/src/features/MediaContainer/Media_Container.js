@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './Media_Container.css';
-import {getCookie, getMyData, getPlaylists, getTracks,  getMyPlayListTrackTotal, test, spotifyApi} from '../user_data_methods.js';
+import {getCookie, spotifyApi} from '../Methods/user_data_methods.js';
 import {
   getTrackState,
   selectTrackName,
-  selectTrackID,
   selectTrackImage,
   selectArtistName
 } from './MediaContainerSlice';
@@ -22,11 +21,10 @@ function Media_Container() {
   return (
     <div className="Media" id="container">
 
-      {/* <button id="login" onClick={test}>Test</button> */}
       <h2 id='track_name'>{trackName}</h2>
       <h3 id='artist_name'>{artistName}</h3>
       <img id='track_image' src={trackImage} alt="Track Image" className="track-image" height='70%' width='82%'/>
-      <button id="track_button" onClick={() => dispatch(getTrackState())}>Shuffle Track</button>
+      <button class="glow-trackButton" id="track_button" onClick={() => dispatch(getTrackState())}>Shuffle Track</button>
     </div>
   );
 }

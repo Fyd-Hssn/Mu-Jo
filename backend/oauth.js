@@ -12,6 +12,12 @@ var request = require('request'); // "Request" library
 var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
+var mongoose = require('mongoose')
+var bodyparse = require('body-parser')
+
+const routeURLS = require('./routes/routes.js')
+const Notes = require('./database/NoteSchema.js');
+const connectDB = require('./database/connect.js')
 
 const PORT = "8888";
 var client_id = 'dca63d1e684340c78f3a41c35358edcd'; // Your client id
@@ -34,16 +40,23 @@ var generateRandomString = function(length) {
 };
 
 var stateKey = 'spotify_auth_state';
+// const dbURI = 'mongodb+srv://fhossain:mujo@fyd-hssn.uy2dkkp.mongodb.net/mujoDB?retryWrites=true&w=majority'
 
+connectDB()
 var app = express();
 
 app.use(express.static(__dirname + '/public'))
    .use(cors({
      origin: "*"
    }))
-   .use(cookieParser());
+   .use(bodyparse.json())
+   .use(bodyparse.urlencoded({extended: true}))
+   .use(cookieParser())
+   .use('/app', routeURLS);
+
 
 app.get('/login', function(req, res) {
+  
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested With, Content-Type, Accept');

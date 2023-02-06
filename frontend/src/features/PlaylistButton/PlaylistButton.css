@@ -1,3 +1,14 @@
+#playlist_cycle {
+  display: inline-flex;
+  position: relative;
+  margin-top: 4.5%;
+  margin-left: 2%;
+  width: 10vw;
+  height: vh;
+  min-width: 10px;
+  top: 12%;
+} 
+
 #playlistLabel {
     position: relative;
     top: 15%;
@@ -13,25 +24,33 @@
 
 #playlist_button {
     display: inline-flex;
+    position: relative;
+    margin-top: 80%;
+    margin-left: 5%;
     font-size: 1vmax;
     align-content: center;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
+    height: 3vh;
+    width: 13vh;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.596);
     background-color: rgba(42, 41, 41, 0.819);
     font-size: 1.5vh;
     border-style: double;
+    border-radius: 5px;
   }
 
-#playlist_cycle {
-  display: inline-flex;
-  position: relative;
-  width: 10vw;
-  height: 3vh;
-  min-width: 10px;
-  top: 12%;
-} 
+
+.glow-playlistButton:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.4);
+}
+
+.glow-playlistButton:active {
+  transform: scale(0.95);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
 
 @media screen and (max-width: 800px) {
   #playlist_button {

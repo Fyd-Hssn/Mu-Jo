@@ -1,0 +1,55 @@
+#field {
+  box-sizing: border-box;
+  position: absolute;
+  width: 95%;
+  height: 120%;
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(255, 255, 255, 0.562);
+}
+
+.glow-button {
+  display: inline-flex;
+  position: absolute;
+  font-size: .75vmax;
+  justify-content: center;
+  height: 5vh;
+  width: 13vh;
+  border-radius: 10px;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+  border-style: double;
+  margin-top: 62%;
+}
+
+#save_note_button {
+  margin-left: 2%;
+}
+
+#load_note_button {
+  margin-left: 27%;
+}
+
+#update_note_button {
+  margin-left: 51.5%;
+}
+
+#delete_note_button {
+  margin-left: 76%;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 20px rgba(145, 92, 182, .4);
+}
+
+.glow-button:active {
+  transform: scale(0.95);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
