@@ -15,31 +15,8 @@
 
 #track_image {
     display: table;
-    /* position: absolute; */
     margin: 0 auto;
     border-radius: 5%;
-    /* margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;  */
-    /* top: 15%;
-    right: 10%; */
-}
-
-#login {
-  display: inline-flex;
-  float: left;
-  margin-top: 13%;
-  margin-left: 6%;
-  height: 5vh;
-  width: 15vh;
-  font-size:1.4vh;
-  align-content: center;
-  align-items: center;
-  padding-left: .75vw;
-  background-color: rgb(22, 22, 22);
-  color: rgba(255, 255, 255, 0.596);
-  border-style: double;
 }
 
 #track_button {
@@ -55,6 +32,17 @@
   background-color: rgb(22, 22, 22);
   color: rgba(255, 255, 255, 0.596);
   border-style: double;
+  border-radius: 5px;
+}
+
+.glow-trackButton:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 20px rgb(0, 145, 255);
+}
+
+.glow-trackButton:active {
+  transform: scale(0.95);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 #track_name {
@@ -63,14 +51,11 @@
   top: -1%;  
   font-size: 2vmin;
   height: 5vh;
-  /* transform: scale(1, 1); */
   max-width: 90%;
   white-space: nowrap;
   overflow: hidden;
-  /* text-overflow: ellipsis; */
-  /* transform:translateX(100%); */
-  /* animation: scroll-left 2s linear infinite; */
 }
+
 #artist_name {
   display:flex;
   position:absolute;
@@ -82,3 +67,4 @@
   overflow: hidden;
   color:rgb(84, 84, 84)
 }
+

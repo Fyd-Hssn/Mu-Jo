@@ -25,7 +25,17 @@ h1 {
   background-color: rgb(22, 22, 22);
 }
 
-/* #login {
+#notes {
+  display: inline-flex;
+  position: relative;
+  float: right;
+  width: 60%;
+  height: 40%;
+  top: 15%;
+  transform: translateY(-15%);
+}
+
+#login {
   display: inline-flex;
   float: left;
   margin-top: 13%;
@@ -39,16 +49,16 @@ h1 {
   background-color: rgb(22, 22, 22);
   color: rgba(255, 255, 255, 0.596);
   border-style: double;
-} */
+  border-radius: 5px;
+}
 
-#notes {
-  display: inline-flex;
-  position: relative;
-  float: right;
-  width: 60%;
-  height: 40%;
-  top: 15%;
-  transform: translateY(-15%);
+.glow-loginButton:hover {
+  box-shadow: 0 3px 20px rgb(95, 201, 2);
+}
+
+.glow-loginButton:active {
+  transform: scale(0.95);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 @font-face {
